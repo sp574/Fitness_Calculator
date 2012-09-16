@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_one"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bUS"
+                android:layout_width="269dp"
+                android:layout_height="40dp"
+                android:background="@drawable/imperical2" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bBMI"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/button_bmi" />
+
+            <Button
+                android:id="@+id/bBF"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/button_bf" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bFiN"
+            android:layout_width="269dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_fio" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="8sp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bBmrTdee"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/button_bmr_tdee" />
+
+            <Button
+                android:id="@+id/bWtH"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/button_wth" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

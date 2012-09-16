@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollAds"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_v31"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvBMRHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="left"
+                    android:text="@string/BMRHeader"
+                    android:textColor="#ffffff"
+                    android:textSize="60sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/tvBFHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/bfHeader"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/tvTDEEHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginTop="-5dp"
+                    android:text="@string/TDEEHeader"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:typeface="normal" />
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <RadioGroup
+                            android:id="@+id/group1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rbMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/Male" />
+
+                            <RadioButton
+                                android:id="@+id/rbFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/Female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2" >
+
+                        <TextView
+                            android:id="@+id/tvHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/height"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                        <EditText
+                            android:id="@+id/etHeightFt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/ft"
+                            android:inputType="number"
+                            android:maxLength="1" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/etHeightIn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/in"
+                            android:inputType="number"
+                            android:maxLength="2" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/weight"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                        <EditText
+                            android:id="@+id/etWeightLbs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/lbs"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1.0" >
+
+                        <EditText
+                            android:id="@+id/etWaistIn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/waistIn"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/etNeckIn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/neckIn"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/etHipsIn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/hipsInWomen"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:visibility="gone" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/etAge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="center"
+                            android:hint="@string/age"
+                            android:inputType="number"
+                            android:maxLength="2" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/sDActivity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/Activity_Level" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp" >
+
+                        <Button
+                            android:id="@+id/bCalculate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bcalc" >
+                        </Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvBMRTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:typeface="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvTDEETxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:typeface="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvBfTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:typeface="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvBfCategory"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:typeface="normal" >
+                    </TextView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp" >
+                    </View>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15013630b80646"
+        android:gravity="center" />
+
+</RelativeLayout>

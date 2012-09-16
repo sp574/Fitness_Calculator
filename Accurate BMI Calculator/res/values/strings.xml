@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AccurateBMICalculatorActivity!</string>
+    <string name="app_name">Fitness Calculator</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="bmiHeader">BMI</string>
+    <string name="waistT">Waist</string>
+    <string name="toHip">to Hip</string>
+    <string name="waist">Waist</string>
+    <string name="bfHeader">Body Fat</string>
+    <string name="bfCalculator">Calculator</string>
+    <string name="calc">Calculate BMI</string>
+    <string name="bmiResult">Your BMI is </string>
+    <string name="hips">Hips</string>
+    <string name="wrist">Wrist</string>
+    <string name="neck">Neck</string>
+    <string name="cm">cm</string>
+    <string name="kgs">kgs</string>
+    <string name="age">age</string>
+    <string name="lbs">lbs</string>
+    <string name="inches">inches</string>
+    <string name="feet">feet</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+    <string name="waistIn">Waist (in)</string>
+    <string name="waistCm">Waist (cm)</string>
+    <string name="neckIn">Neck (in)</string>
+    <string name="neckCm">Neck (cm)</string>
+    <string name="hipIn">Hips (in)</string>
+    <string name="hipCm">Hips (cm)</string>
+    <string name="hipsInWomen">Hips(in). Women Only</string>
+    <string name="hipsCmWomen">Hips(cm). Women Only</string>
+    <string name="or">or</string>
+    <string name="women">Women</string>
+    <string name="Metric">Metric</string>
+    <string name="US">Imperical (US)</string>
+    <string name="BMRHeader">BMR</string>
+    <string name="TDEEHeader">TDEE</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="fatBurn">Lbs of fat to lose per week</string>
+    <string name="Activity_Level">Activity Level</string>
+    <string name="four">Four</string>
+    <string name="inOne">in One</string>
+
+    <string-array name="activity_levels">
+        <item>Sedentary - desk job</item>
+        <item>Lightly Active - light exercise</item>
+        <item>Moderate - sports 3-5 days/wk</item>
+        <item>Very Active - sports 6-7 days/wk</item>
+        <item>Extreme - hard daily exercise</item>
+    </string-array>
+
+</resources>
