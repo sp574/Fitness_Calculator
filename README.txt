@@ -1,0 +1,2 @@
+Stanislav Perevozchikov. 
+I worked on this application over the summer (2012) while teaching myself Android. The app can calculate numerous measurements like Body Fat percentage, Body Mass Index (BMI), and many others. The app *.apk can be found the repository and manually installed on any android smartphone.
